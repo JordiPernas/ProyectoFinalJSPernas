@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.tarjeta button {
+  width: 70px;
+  border-radius: 5px;
+}
+
+.imagenes-galeria {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+}
+
+.titulo-principal {
+  text-align: left;
+  color: green;
+  font-size: 50px;
+}
+
+.titulos {
+  font-size: 40px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 3px solid rgb(26, 102, 16);
+}
+
+.titulo-footer {
+  font-size: 30px;
+}
+
+.texto-nosotros {
+  text-align: center;
+  margin: 30px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.subtitulo-galeria {
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+.subtitulo-contacto {
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .titulo-footer {
+    font-size: 20px;
+  }
+  .texto-nosotros {
+    font-size: 10px;
+  }
+}
+header {
+  background-color: black;
+  text-align: center;
+  height: auto;
+}
+
+.navegador {
+  border-top: 10px solid rgb(26, 102, 16);
+  border-bottom: 10px solid rgb(26, 102, 16);
+  text-align: right;
+}
+.navegador ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  z-index: 10;
+}
+.navegador ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px 10px 30px 0px;
+  display: block;
+  padding: 10px 20px;
+}
+
+.navunido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegador .menu {
+  display: none;
+}
+
+.linea1 {
+  background-color: green;
+  height: 7px;
+}
+
+.marcas {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+#keller {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#honda {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#yamaha {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#bajaj {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#motomel {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#kawasaki {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#gilera {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#benelli {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#corven {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#zanella {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .navegador {
+    position: static;
+  }
+  .navegador .menu {
+    order: -1;
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+  .navegador ul:hover {
+    left: 0px;
+  }
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -900px;
+    background-color: white;
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 200px;
+    transition: 0.4s;
+  }
+  .navunido {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 452px) {
+  .navegador .menu {
+    order: -1;
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+  .navegador ul:hover {
+    left: 0px;
+  }
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -700px;
+    background-color: white;
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 200px;
+    transition: 0.4s;
+  }
+}
+.nombre-marcas {
+  font-size: 40px;
+  font-style: italic;
+  background-color: green;
+  margin: 15px;
+  color: white;
+  border: 5px solid black;
+}
+
+.carousel-item img {
+  height: 720px;
+  object-fit: cover;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+}
+
+@media (max-width: 1250px) {
+  .carousel-item img {
+    height: auto;
+  }
+}
+.main a {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 15px;
+}
+
+#nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+}
+
+#apellido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+}
+
+#edad{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+}
+#monto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+}
+
+#cuotas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+}
+
+#btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 0px 215px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#btnTipos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 0px 215px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#tiposDeCredito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+}
+
+.nombres {
+  background-color: black;
+  margin: 15px;
+  color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.intereses {
+  margin: 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.resultadoCredito{
+  color: white;
+  background-color: #0C7D0B;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 500px;
+  height: auto;
+  padding: 15px;
+  margin: 5px;
+}
+
+
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.tarjeta {
+  border: 2px solid black;
+  width: 250px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 40px;
+  transition: 1s;
+}
+.tarjeta img {
+  width: 100%;
+}
+.tarjeta h3 {
+  text-align: center;
+}
+.tarjeta:hover {
+  background-color: green;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.tarjeta:visited {
+  background-color: darkgreen;
+}
+
+@media (max-width: 992px) {
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .tarjeta {
+    border: 2px solid black;
+    width: 250px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tarjeta {
+    border: 2px solid black;
+    width: 250px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px;
+  }
+}
+@media (max-width: 452px) {
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tarjeta {
+    border: 2px solid black;
+    width: 175px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+  }
+}
+.mapa {
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.mapabox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
+
+
+.formulario {
+  border: 3px solid black;
+  border-radius: 10px;
+  color: white;
+  width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: rgb(26, 102, 16);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 0px 7px 12px #0C7D0B;
+}
+.formulario .dato {
+  display: flex;
+  flex-direction: column;
+}
+.formulario .dato input {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.formulario .dato input:focus {
+  background-color: rgba(0, 0, 0, 0.582);
+  border: none;
+  outline: none;
+}
+.formulario .dato textarea {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.formulario .dato textarea:focus {
+  background-color: rgba(0, 0, 0, 0.582);
+  border: none;
+  outline: none;
+}
+.formulario .dato select {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.formulario .dato select:focus {
+  background-color: rgba(0, 0, 0, 0.582);
+  border: none;
+  outline: none;
+}
+.formulario .dato button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 10px;
+}
+
+@media (max-width: 1126px) {
+  .formulario {
+    width: 700px;
+  }
+}
+@media (max-width: 898px) {
+  .formulario {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .formulario {
+    grid-template-columns: 1fr;
+    width: 400px;
+  }
+}
+@media (max-width: 452px) {
+  .formulario {
+    width: 300px;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: green;
+  border: 5px solid black;
+  font-weight: bolder;
+}
+
+.cotizaciones {
+  display: flex;
+  border: 3px solid black;
+  width: 300px;
+  background-color: green;
+  margin: 5px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 25px;
+  color: white;
+}
+.cotizaciones h5 {
+  color: black;
+  font-weight: bolder;
+}
+
+.form-credito {
+  display: flex;
+  border: 3px solid black;
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  background-color: green;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form-credito .boton-credito {
+  border-radius: 5px;
+  font-size: 17px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  border: 35px;
+}
+
+.texto-footer {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.redes-footer {
+  border: 3px solid black;
+  width: 300px;
+  margin: 5px;
+  background-color: green;
+  text-align: center;
+}
+.redes-footer .fa-brands {
+  font-size: 20px;
+  text-align: center;
+}
+.redes-footer .descripcion-footer {
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cotizaciones {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

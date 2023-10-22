@@ -1,0 +1,12 @@
+.carousel-item img{
+    height: 720px;
+    object-fit: cover;
+}
+#carouselExampleIndicators{
+    width: 100%;
+}
+@media(max-width:1250px){
+    .carousel-item img{
+        height: auto;
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "nombre":"simple",
+        "interes": 1.75
+    },
+    {
+        "nombre":"gold",
+        "interes": 1.65
+    },
+    {
+        "nombre":"platinum",
+        "interes": 1.55
+    },
+    {
+        "nombre":"black",
+        "interes": 1.45
+    },
+    {
+        "nombre":"diamond",
+        "interes": 1.35
+    }
+]

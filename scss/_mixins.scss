@@ -1,0 +1,6 @@
+@mixin marcas ($fz,$martop,$textalign){
+
+    font-size: $fz;
+    margin-top: $martop;
+    text-align: $textalign;
+}

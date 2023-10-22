@@ -1,0 +1,82 @@
+.formulario{
+    border: 3px solid black ;
+    border-radius: 10px;
+    color: white;
+    width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgb(26, 102, 16);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 0px 7px 12px #0C7D0B;
+    .dato{
+    display: flex;
+    flex-direction: column;
+        input{ 
+            background-color: $bg-color;
+            color: white;
+            border: none;
+        &:focus{
+            background-color:rgba(0, 0, 0, 0.582);
+            border: none;
+            outline: none;
+        }
+        }
+        textarea{ 
+            background-color:$bg-color;
+            color: white;
+            border: none;
+            &:focus{
+                background-color:rgba(0, 0, 0, 0.582);
+                border: none;
+                outline: none;
+            }
+        }
+        select{ 
+            background-color:$bg-color;
+            color: white;
+            border: none;
+            &:focus{
+                background-color:rgba(0, 0, 0, 0.582);
+                border: none;
+                outline: none;
+            }
+        }
+        button{
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            margin: 10px;
+        }
+            }
+    
+}
+@media(max-width:1126px){
+    .formulario{
+        width: 700px ;
+    }
+}
+@media(max-width:898px){
+    .formulario{
+        width: 600px ;
+    }
+}
+@media(max-width:768px){
+   
+    .formulario{
+        grid-template-columns: 1fr;
+        width: 400px;
+    }
+}
+@media(max-width:452px){
+ 
+
+    .formulario{
+        width: 300px ;
+    }
+}

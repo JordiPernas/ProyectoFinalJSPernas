@@ -1,0 +1,50 @@
+.titulo-principal{
+    text-align: left;
+    color: green;
+    font-size: 50px;
+}
+
+.titulos{
+
+    font-size: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 3px solid rgb(26, 102, 16);
+}
+.titulo-footer{
+
+    font-size: 30px;
+
+}
+
+.texto-nosotros{
+
+    text-align: center;
+    margin: 30px;
+    font-style: italic;
+    font-size: 20px;
+
+}
+.subtitulo-galeria{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+.subtitulo-contacto{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+@media(max-width:768px){
+   
+    .titulo-footer{
+
+        font-size: 20px;
+    
+    }
+    .texto-nosotros{
+        font-size: 10px;
+    }
+}
+    

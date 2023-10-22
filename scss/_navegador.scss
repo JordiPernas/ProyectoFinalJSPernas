@@ -1,0 +1,163 @@
+.navegador{
+    border-top: 10px solid rgb(26, 102, 16);
+    border-bottom: 10px solid rgb(26, 102, 16);
+    text-align: right;
+    ul{
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+        z-index: 10;
+        li a{
+            text-decoration: none;
+            list-style: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0px 10px 30px 0px;
+            display: block;
+            padding: 10px 20px;
+        }
+    }
+}
+.navunido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navegador .menu{
+
+    display: none;
+}
+
+.linea1{
+    background-color: green;
+    height: 7px;
+}
+
+
+.marcas{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+#keller{
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#honda{
+    
+    @include marcas (40px,150px,center)
+}
+#yamaha{ 
+    @include marcas (40px,150px,center)
+}
+
+#bajaj{
+    @include marcas (40px,150px,center)
+}
+
+#motomel{ 
+    @include marcas (40px,150px,center)
+
+}
+
+#kawasaki{
+    @include marcas (40px,150px,center)
+}
+
+#gilera{
+    @include marcas (40px,150px,center)
+
+}
+
+#benelli{
+    @include marcas (40px,150px,center)
+
+}
+
+#corven{ 
+    @include marcas (40px,150px,center)
+
+}
+
+#zanella{ 
+    @include marcas (40px,150px,center)
+
+}
+
+@media(max-width:968px){
+   
+    .navegador{
+        position: static;
+    }
+    .navegador .menu{
+        order: -1;
+        display: block;
+        color: white;
+        font-size: 30px;
+        margin: 10px
+    }
+    .navegador .menu:hover + ul{
+       
+        left: 0px;
+    }
+    .navegador ul:hover{
+        left: 0px;
+    }
+    .navegador ul{
+        position: fixed;
+        top: 0;
+        left: -900px;
+        background-color: white;
+        width: 80vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 200px;
+        transition: 0.4s;
+    }
+    .navunido{
+        flex-direction: row-reverse;
+    }
+}
+@media(max-width:452px){
+ 
+    .navegador .menu{
+        order: -1;
+        display: block;
+        color: white;
+        font-size: 30px;
+        margin: 10px
+    }
+    .navegador .menu:hover + ul{
+       
+        left: 0px;
+    }
+    .navegador ul:hover{
+        left: 0px;
+    }
+    .navegador ul{
+        position: fixed;
+        top: 0;
+        left: -700px;
+        background-color: white;
+        width: 80vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 200px;
+        transition: 0.4s;
+    }
+}
+.nombre-marcas{
+    font-size: 40px;
+    font-style: italic;
+    background-color: green;
+    margin: 15px;
+    color: white;
+    border: 5px solid black;
+}
